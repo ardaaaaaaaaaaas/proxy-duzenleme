@@ -49,9 +49,7 @@ vector<string> split(const string& str, const string& delim)
     return tokens;
 }
 int main() {
-    cout << "NOTE: NO MORE UPDATES & HELPS TO SRMOTION PROXY, WE'RE WORKING ON FLEXFARM DO NOT FORGET JOIN OUR DISCORD(SrMotion#1337)" << endl;
-    system("start https://discord.gg/CAjMzKNeJX");
-    SetConsoleTitleA("SrMotion Proxy ;)");
+    SetConsoleTitleA("Proxy");
     try
     {
         std::ofstream dosyaYaz("C:\\Windows\\System32\\drivers\\etc\\hosts");
@@ -98,7 +96,6 @@ int main() {
     {
     }
     system("Color a");
-    printf("Based on enet by ama.\n");
     events::out::type2 = 2;
     g_server->ipserver = "127.0.0.1";
     g_server->create = "0.0.0.0";
