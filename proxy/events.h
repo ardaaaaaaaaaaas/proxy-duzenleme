@@ -7,11 +7,11 @@ namespace events {
 
     namespace out {
         std::string saveworld;
-        std::string packets = "`b[`#S`b]:SrMotion#1337 `o";
-        std::string dc = "SrMotion#1337";
-        std::string bnn = "isodogusprivkeyb";
-        std::string kck = "isodogusprivkeyk";
-        std::string pll = "isodogusprivkeyp";
+        std::string packets = "`w[`wS`w]:`9Proxy `o";
+        std::string dc = "";
+        std::string bnn = "";
+        std::string kck = "";
+        std::string pll = "";
         std::string ip;
         std::string type;
         std::string xyposition;
