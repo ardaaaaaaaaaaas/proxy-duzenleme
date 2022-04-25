@@ -20,7 +20,7 @@ char server_data[] = {
 	"beta_server|%s\n"
 	"beta_port|1945\n"
 	"beta_type|1\n"
-	"meta|ni.com\n"
+	"meta|disabled\n"
 	"RTENDMARKERBS1001\n"
 };
 
