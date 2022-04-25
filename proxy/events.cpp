@@ -338,7 +338,6 @@ bool events::out::generictext(std::string packet) {
             a.addCheckbox("worldbanmod", "Exit world when mod joins", worldbanjoinmod);
             a.addCheckbox("visualspin", "Enable Visual Spin", visualspin);
             a.addCheckbox("autohosts", "Enable Show X,Y Position", autohosts);
-            a.addCheckbox("wltroll1", "Enable World Lock Troll", wltroll);
             a.addInputBox("roulette5", "Number:", to_string(ruletsayi), 2);
             a.addInputBox("saveworld", "Save World:", saveworld, 12);
             a.endDialog("end","Okey","Cancel");
@@ -1028,7 +1027,6 @@ bool events::out::generictext(std::string packet) {
                 "\nadd_button|banall|`4Ban All``|noflags|0|0|"
                 "\nadd_button|pullall|`5Pull All``|noflags|0|0|"
                 "\nadd_button|ubaworld|`5Unban World``|noflags|0|0|"
-                "\nadd_textbox|`4IMPORTANT: `oDiscord: SrMotion#0069.|left|2480|"
                 "\nadd_quick_exit|"
                 "\nend_dialog|end|Cancel|Okay|";
             variantlist_t liste{ "OnDialogRequest" };
@@ -1138,20 +1136,12 @@ bool events::out::state(gameupdatepacket_t* packet) {
         return true;
     return false;
 }
-std::string paket = "add_label_with_icon|big|`5The Proxy Gazette``|left|5016|"
+std::string paket = "add_label_with_icon|big|`5P`53r`2o`4x`6y``|left|5016|"
 //"\nadd_image_button|banner|interface/large/wtr_lvl11_xualqu.rttex|bannerlayout|||"
-"\nadd_spacer|small|\n\nadd_url_button||`1Join Discord Server``|NOFLAGS|https://discord.gg/KD4a37S2an|Open link?|0|0|"
-"\nadd_textbox|`wDecember 26th: `5Don't Forget Join Discord Server https://discord.gg/KD4a37S2an |left|"
-"\nadd_spacer|small|"
-"\nadd_textbox|`wDecember 26th: `5Proxy made by SrMotion#0001 |left|"
-"\nadd_spacer|small|"
 "\nadd_textbox|All Commands: |left|"
 "\nadd_spacer|small|"
 "\nadd_textbox|`9/proxy `#(shows commands)|left|2480|"
-"\nadd_textbox|`9/world `#(shows commands)|left|2480|"
-"\nadd_textbox|`9/bypassvault `#(bypassing safe vault)|left|2480|"
-"\nadd_textbox|`9/bypassdoor `#(bypassing the doorid /setid (set door id))|left|2480|"
-"\nadd_textbox|`9/bypasspath `#(bypassing the path marker)|left|2480|"
+"\nadd_textbox|`9/world `#(shows commands banall/kickall)|left|2480|"
 "\nadd_textbox|`9/tp [name] `#(teleports to a player in the world) |left|2480|"
 "\nadd_textbox|`9/ghost `#(toggles ghost, you wont move for others when its enabled)|left|2480|"
 "\nadd_textbox|`9/uid [name] `#(resolves name to uid)|left|2480|"
@@ -1166,21 +1156,9 @@ std::string paket = "add_label_with_icon|big|`5The Proxy Gazette``|left|5016|"
 "\nadd_textbox|`9/server `#(You Can Change Server Informations)|left|2480|"
 "\nadd_textbox|`9/account `#(See your account credentials)|left|2480|"
 "\nadd_textbox|`9/setuid `#(set uid for world lock troll)|left|2480|"
-"\nadd_textbox|`9/wlt `#(open/close worldlock troll)|left|2480|"
-"\nadd_textbox|`9/crash `#(You can Crash World)|left|2480|"
-"\nadd_textbox|`9/vault `#(Safe Vault Bypass)|left|2480|"
-"\nadd_textbox|`9/token `#(token exploit you need mentorship ticket you can buy with /buym and set netid to /setnid)|left|2480|"
 "\nadd_textbox|`9/name [name] `#(Change's your gt name visual)|left|2480|"
 "\nadd_spacer|small|"
-"\nadd_layout_spacer|3imageslayout|\nadd_layout_spacer|3imageslayout|\nadd_spacer|small|"
-"\nadd_textbox|Don't forget to join our `2Official Proxy Discord Server`` on `2https://discord.gg/KD4a37S2an `` or click the link below!|left|"
-"\nadd_textbox|Visit our Social Media pages for more Content!|left|"
-"\nadd_spacer|small|"
 "\nadd_layout_spacer|2imageslayout|"
-"\nadd_image_button|iotm_layout_4|interface/large/gazette/gazette_5columns_social_btn04.rttex|5imageslayout|https://www.youtube.com/channel/UCLZOpt3XfT1Pp9U4JUC6SzQ"
-"UCLZOpt3XfT1Pp9U4JUC6SzQ|Would you like to open this in Youtube?|"
-"\nadd_image_button|iotm_layout_4|interface/large/gazette/gazette_5columns_social_btn06.rttex|5imageslayout|https://discord.gg/KD4a37S2an|Would you like to join our "
-"discord?|"
 "\nadd_layout_spacer|2imageslayout|"
 "\nadd_textbox||\nadd_spacer|small|"
 "\nadd_textbox||\nadd_spacer|small|"
